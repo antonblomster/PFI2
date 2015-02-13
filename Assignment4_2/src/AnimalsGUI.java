@@ -61,7 +61,9 @@ public class AnimalsGUI extends JFrame {
 		animals.add(new Snake("Sir Väz", false));
 		animals.add(new Cat("Dead Moews", 3, 5));
 		animals.add(new Dog("Canis Latrans", 5, true, "Wolfgang"));
-		animals.add(new Snake("John Jones", true));
+		Snake snake = new Snake("John Jones", true);
+		snake.setFriendlyName("Zzzzzzz");
+		animals.add(snake);
 		
 		for(int i = 0; i< animals.size(); i++){
 			textArea.append(animals.get(i).getInfo() + "\n");

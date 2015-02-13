@@ -21,6 +21,6 @@ public class Snake extends Animal{
 		else{
 			poison = "is";
 		}
-		return "The snake, " + "\"" + getLatinName() + "\" " + poison + " poisonous.";
+		return "The snake, " + "\"" + getFriendlyName() + "\"" + ", latin: " + "\"" + getLatinName() + "\" " + poison + " poisonous.";
 	}
 }
