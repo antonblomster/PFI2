@@ -1,35 +1,18 @@
 package se.mah.k3lara.skaneAPI.view;
 
-import java.util.Calendar;
-import se.mah.k3lara.skaneAPI.control.Constants;
-import se.mah.k3lara.skaneAPI.model.Journey;
-import se.mah.k3lara.skaneAPI.model.Journeys;
+
 import se.mah.k3lara.skaneAPI.xmlparser.Parser;
-
-
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextField;
 import javax.swing.JButton;
-
-import se.mah.k3lara.skaneAPI.control.Constants;
-import se.mah.k3lara.skaneAPI.model.Journey;
-import se.mah.k3lara.skaneAPI.model.Journeys;
-import se.mah.k3lara.skaneAPI.model.Station;
-import se.mah.k3lara.skaneAPI.xmlparser.Parser;
-
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
-
 import javax.swing.JTextArea;
-
 import se.mah.k3lara.skaneAPI.model.Station;
-import se.mah.k3lara.skaneAPI.xmlparser.Parser;
 import javax.swing.JScrollPane;
 import javax.swing.JLabel;
 
@@ -87,6 +70,7 @@ public class JourneyGUI extends JFrame {
 		panel.add(searchStationText);
 		searchStationText.setColumns(10);
 		
+		//Search button for stations
 		JButton searchButton = new JButton("Sök hållplats");
 		searchButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -128,6 +112,7 @@ public class JourneyGUI extends JFrame {
 		lblTill.setBounds(6, 64, 61, 16);
 		panel_1.add(lblTill);
 		
+		//Search button for journeys
 		JButton searchJourney = new JButton("Sök resa");
 		searchJourney.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
