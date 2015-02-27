@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true">  
   <class id="1" language="java" name="se.mah.k3lara.skaneAPI.model.Journey" project="A6_Anton_Blomster" 
     file="/A6_Anton_Blomster/src/se/mah/k3lara/skaneAPI/model/Journey.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="387" y="182"/>    
+    <position height="-1" width="-1" x="422" y="180"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="se.mah.k3lara.skaneAPI.model.Journeys" project="A6_Anton_Blomster" 
     file="/A6_Anton_Blomster/src/se/mah/k3lara/skaneAPI/model/Journeys.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="625" y="68"/>    
+    <position height="-1" width="-1" x="718" y="68"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="se.mah.k3lara.skaneAPI.model.Station" project="A6_Anton_Blomster" 
     file="/A6_Anton_Blomster/src/se/mah/k3lara/skaneAPI/model/Station.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="117" y="170"/>    
+    <position height="-1" width="-1" x="128" y="215"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,24 +30,36 @@
   </class>  
   <association id="4">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="5" name="endStation"/>      
-      <multiplicity id="6" minimum="0" maximum="1"/>    
+      <attribute id="5" name="startStation">        
+        <position height="0" width="0" x="11" y="45"/>      
+      </attribute>      
+      <multiplicity id="6" minimum="0" maximum="1">        
+        <position height="0" width="0" x="11" y="45"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="7">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="8" name="journeys"/>      
-      <multiplicity id="9" minimum="0" maximum="2147483647"/>    
+      <attribute id="8" name="journeys">        
+        <position height="0" width="0" x="35" y="-2"/>      
+      </attribute>      
+      <multiplicity id="9" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="35" y="-2"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="10">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="11" name="startStation"/>      
-      <multiplicity id="12" minimum="0" maximum="1"/>    
+      <attribute id="11" name="endStation">        
+        <position height="0" width="0" x="11" y="45"/>      
+      </attribute>      
+      <multiplicity id="12" minimum="0" maximum="1">        
+        <position height="0" width="0" x="11" y="45"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
