@@ -19,8 +19,8 @@ public class Constants {
 
 	/**
 	 * Build the Querystringz
-	 * @param startStationNumber from skånetrafiken
-	 * @param endStationNumber from skånetrafiken
+	 * @param startStationNumber from skï¿½netrafiken
+	 * @param endStationNumber from skï¿½netrafiken
 	 * @param date for first start from in form yyyy-mm-dd
 	 * @param time in format hh:mm 24 H
 	 * @param nbrResults max 20
@@ -33,8 +33,8 @@ public class Constants {
 	
 	/**
 	 * Build the Querystringz
-	 * @param startStationNumber from skånetrafiken
-	 * @param endStationNumber from skånetrafiken
+	 * @param startStationNumber from skï¿½netrafiken
+	 * @param endStationNumber from skï¿½netrafiken
 	 * @param nbrResults max 20 from now
 	 * */
 	public static String getURL(String startStationNumber, String endStationNumber, int nbrResults){
@@ -42,12 +42,12 @@ public class Constants {
 		String url = baseURL + queryURL + pipe+startStationNumber + pipe + midPartURL +pipe + endStationNumber + pipe + "0"+ noOfResults+nbrRes;
 		return url;
 	}
-	
+
 	/**
 	 * Build the StationresultURL
-	 * @param startStationNumber from skånetrafiken
+	 * @param startStationNumber from skÃ¥netrafiken
 	 * */
-	public static String getStationResultURL(Station station){
+	public static String getStationResultURL(Station station) {
 		String url = baseURL + stationResultURL +station.getStationNbr();
 		return url;
 	}
